@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Xeha</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="inner-container left-side">
+                   <img src="img/profile.jpg" class="profile">
+                   <p id="username"></p>
+                   <p id="email"></p>
+
+                   <button class="btn btn-warning" id="edit">Edit</button>
+                   <button class="btn btn-danger" id="odjava">Logout</button>
+                </div>
+
+            </div>
+            <div class="col-md-9">
+                <div class="inner-container right-side">
+                    <form id="postForm">
+                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                        <button class="btn btn-success">Post</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="custom_modal">
+        <button id="close_modal">X</button>
+
+        <form id="edit_form">
+            <h2>Edit account</h2>
+            <div>
+                <label for="korisnicko_ime">Korisnicko ime: * </label>
+                <input id="korisnicko_ime" type="text" name="korisnicko_ime" placeholder="Unesi ime">
+            </div>
+            <div>
+                <label for="email">Email adresa: * </label>
+                <input id="edit_email" type="text" name="register_email" placeholder="Unesi email">
+            </div>
+            <div>
+                <button class="btn btn-warning">Edit</button>
+            </div>
+        </form>
+
+        <hr>
+
+        <button id="deleteProfile" class="btn btn-danger">Delete account</button>
+
+    </div>
+
+
+    <script src="js/Session.js"></script>
+    <script src="js/User.js"></script>
+    <script src="js/hexa.js"></script>
+
+</body>
+
+</html>
